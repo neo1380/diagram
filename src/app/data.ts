@@ -6,15 +6,41 @@ export const graph: DiagramMakerData<{}, {}> = {
     node1: {
       id: "node1",
       diagramMakerData: {
-        position: { x: 200, y: 150 },
-        size: { width: 100, height: 50 },
+        position: {
+          x: 200,
+          y: 150,
+        },
+        size: {
+          width: 100,
+          height: 50,
+        },
       },
     },
     node2: {
       id: "node2",
       diagramMakerData: {
-        position: { x: 400, y: 300 },
-        size: { width: 100, height: 50 },
+        position: {
+          x: 400,
+          y: 300,
+        },
+        size: {
+          width: 100,
+          height: 50,
+        },
+      },
+    },
+    "dm-node-8ebf38cd-36ec-4a3a-a0f6-15ace8890266": {
+      id: "dm-node-8ebf38cd-36ec-4a3a-a0f6-15ace8890266",
+      typeId: "testId-normalWithSize",
+      diagramMakerData: {
+        position: {
+          x: 424,
+          y: 132,
+        },
+        size: {
+          width: 100,
+          height: 50,
+        },
       },
     },
   },
@@ -24,6 +50,12 @@ export const graph: DiagramMakerData<{}, {}> = {
       src: "node1",
       dest: "node2",
       diagramMakerData: {},
+    },
+    "dm-edge-0f400ade-4a1f-47d0-8fcd-abb21248ea2f": {
+      dest: "dm-node-8ebf38cd-36ec-4a3a-a0f6-15ace8890266",
+      diagramMakerData: {},
+      id: "dm-edge-0f400ade-4a1f-47d0-8fcd-abb21248ea2f",
+      src: "node1",
     },
   },
   panels: {
