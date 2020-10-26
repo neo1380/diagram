@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
             library: (panel: any, state: any, container: HTMLElement) =>
               createLibraryPanel(container),
             tools: (panel: any, state: any, container: HTMLElement) =>
-              createToolsPanel(container, () => diagramMaker),
+              createToolsPanel(container, () => this.diagramMaker),
           },
           contextMenu: {
             node: (id: string | undefined, container: HTMLElement) =>
